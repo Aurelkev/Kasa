@@ -1,0 +1,13 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/banner1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-weight: 700;
+}

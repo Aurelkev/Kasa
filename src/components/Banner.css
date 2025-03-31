@@ -2,18 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 90vw;
-  margin: auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/banner1.jpg');
   background-size: cover;
   background-position: center;
   height: 220px;
   border-radius: 25px;
-  color: #FFFFFF;
+  color: var(--white);
   font-weight: 700;
   text-shadow: 
     1px 1px 0px black,  
     -1px -1px 0px black,  
     1px -1px 0px black,  
     -1px 1px 0px black;
+  margin-bottom: 45px;
 }

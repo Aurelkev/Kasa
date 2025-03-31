@@ -3,14 +3,14 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import Main from "./components/Main";
 import Banner from "./components/Banner";
-import LocationGrid from "./components/LocationGrid";
+import RentalGrid from "./components/RentalGrid";
 
 function App() {
   return <div>
     <Navbar />
     <Main>
       <Banner />
-      <LocationGrid />
+      <RentalGrid />
     </Main>
   </div>
 }

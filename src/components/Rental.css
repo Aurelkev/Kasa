@@ -1,4 +1,4 @@
-.location {
+.rental {
   background-image: linear-gradient(to bottom, #FF6060, #CC4D4D);
   border-radius: 10px;
   flex-basis: 28%;
@@ -9,7 +9,7 @@
 
 }
 
-.location__title {
+.rental__title {
   margin: 0 0 0.5rem 0.5rem;
   font-size: 18px;
   font-weight: 700;

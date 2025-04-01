@@ -1,5 +1,7 @@
+@use '../sass/utils/variables.scss' as colors;
+
 .grid {
-  background-color: #F6F6F6;
+  background-color: colors.$background-color-primary;
   border-radius: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

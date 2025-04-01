@@ -1,5 +1,7 @@
+@use '../sass/utils/variables.scss' as colors;
+
 .rental {
-  background-image: linear-gradient(to bottom, #FF6060, #CC4D4D);
+  background-image: linear-gradient(to bottom, colors.$primary-color, #CC4D4D);
   border-radius: 10px;
   flex-basis: 28%;
   display: grid;
@@ -10,7 +12,7 @@
     margin: 0 0 0.5rem 0.5rem;
     font-size: 18px;
     font-weight: 700;
-    color: #FFF;
+    color: colors.$secondary-color;
     width: 30%;
   }
 }

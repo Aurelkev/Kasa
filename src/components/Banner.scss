@@ -1,3 +1,5 @@
+@use '../sass/utils/variables.scss' as colors;
+
 .banner {
   display: flex;
   justify-content: center;
@@ -7,7 +9,7 @@
   background-position: center;
   height: 220px;
   border-radius: 25px;
-  color: #fff;
+  color: colors.$secondary-color;
   font-weight: 700;
   text-shadow: 
     1px 1px 0px black,  

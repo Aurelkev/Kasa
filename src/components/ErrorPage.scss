@@ -1,9 +1,11 @@
+@use '../sass/utils/variables.scss' as colors;
+
 .error {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color : #FF6060;
+  color : colors.$primary-color;
   & h2 {
     font-size: 288px;
     font-weight: 700;
@@ -16,7 +18,7 @@
   }
   & .home {
     text-decoration: underline;
-    color: black;
+    color: colors.$terciary-color;
     font-size: 18px;
     padding-bottom: 4rem;
   }

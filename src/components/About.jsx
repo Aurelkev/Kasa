@@ -1,20 +1,21 @@
 import React from "react";
 import Navbar from "./Navbar";
-import "./About.css";
-import Main from "./Main";
-import Banner from "./Banner";
-import RentalGrid from "./RentalGrid";
+import "./About.scss";
 import Footer from "./Footer";
+import { Link } from "react-router";
 
-function About() {
-  return <div>
-    <Navbar />
-    <Main>
-      <Banner />
-      <RentalGrid />
-    </Main>
-    <Footer/>
-  </div>
-}
+const About = () => {
+  return (
+    <div>
+      <Navbar />
+      <div className="about">
+        <h2>404</h2>
+        <p>Oups! La page que vous demandez n'existe pas.</p>
+        <Link to="/" className="home">Retourner sur la page d’accueil</Link>
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
 export default About;

@@ -6,12 +6,11 @@
   align-items: end;
   min-height: 255px;
 
-}
-
-.rental__title {
-  margin: 0 0 0.5rem 0.5rem;
-  font-size: 18px;
-  font-weight: 700;
-  color: #FFF;
-  width: 30%;
+  &__title {
+    margin: 0 0 0.5rem 0.5rem;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+    width: 30%;
+  }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./RentalGrid.css"
+import "./RentalGrid.scss"
 import Rental from "./Rental.jsx";
 
 function RentalGrid() {

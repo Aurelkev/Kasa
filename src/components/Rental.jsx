@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-import "./Rental.css";
+import "./Rental.scss";
 
 function Rental() {
   return <Link to="/info-rental"><div className="rental">

@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 24px;
+  gap: 1.5rem;
+  margin: 45px 100px 50px 100px;
+
+  & a {
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & .active {
+    text-decoration: underline;
+  }
+
+  &__logo {
+    margin-right: auto;
+
+    & img {
+      height: 70px;
+      width: 210px;
+    }
+  }
+}

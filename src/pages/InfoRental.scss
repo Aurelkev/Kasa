@@ -28,6 +28,7 @@
 
     &__title {
       flex-grow: 1;
+      margin-bottom: 25px;
     }
 
     &__tags {
@@ -77,6 +78,28 @@
       display: flex;
       margin-top: 20px;
       gap: 10px;
+    }
+  }
+  &__description {
+    display: flex;
+    flex-direction: row;
+    gap : 75px;
+    &__details {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      background-color: colors.$primary-color;
+      color: colors.$secondary-color;
+      margin: 0;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    &__content {
+      color: colors.$terciary-color;
+      background-color: colors.$background-color-primary;
+      margin: 0;
+      padding: 20px;
     }
   }
 }

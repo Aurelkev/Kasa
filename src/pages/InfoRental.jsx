@@ -1,5 +1,6 @@
 import React from "react";
 import "./InfoRental.scss";
+import Star from "../components/Star.jsx";
 
 
 function InfoRental() {
@@ -19,8 +20,20 @@ function InfoRental() {
           </div>
         </div>
         <div className="apartment__host">
-          <h3>Alexandre Dumas</h3>
-          <div className="apartment__host__rate"></div>
+          <div className="apartment__host__details">
+            <h3>
+              <span>Alexandre</span>
+              <span>Dumas</span>
+            </h3>
+            <div className="apartment__host__badge"></div>
+          </div>
+          <div className="apartment__host__rate">
+            <Star />
+            <Star />
+            <Star />
+            <Star />
+            <Star />
+          </div>
         </div>
       </div>
       <div className="apartment__description">

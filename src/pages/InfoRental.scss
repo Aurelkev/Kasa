@@ -8,11 +8,13 @@
     height: 20rem;
     object-fit: cover;
     border-radius: 25px;
+    margin-bottom: 30px;
   }
 
   h1 {
     font-size: 36px;
     font-weight: 500;
+    margin: 0;
   }
 
   h2 {
@@ -43,6 +45,38 @@
         text-align: center;
         padding: 3px 0;
       }
+    }
+  }
+
+  &__host {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    h3 {
+      font-weight: 500;
+      font-size: 18px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+    }
+    &__details {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    &__badge {
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+      background-color: #C4C4C4;
+    }
+
+    &__rate {
+      display: flex;
+      margin-top: 20px;
+      gap: 10px;
     }
   }
 }

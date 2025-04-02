@@ -1,0 +1,48 @@
+@use "../sass/utils/variables.scss" as colors;
+
+.apartment {
+  color: colors.$primary-color;
+
+  img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: colors.$terciary-color;
+  }
+
+  &__page {
+    display: flex;
+
+    &__title {
+      flex-grow: 1;
+    }
+
+    &__tags {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 35%;
+      gap: 1rem;
+
+      span {
+        font-weight: 700;
+        font-size: 14px;
+        background-color: colors.$primary-color;
+        color: colors.$secondary-color;
+        border-radius: 10px;
+        text-align: center;
+        padding: 3px 0;
+      }
+    }
+  }
+}

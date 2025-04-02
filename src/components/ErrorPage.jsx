@@ -1,7 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
 import "./ErrorPage.scss";
-import Footer from "./Footer";
 import { Link } from "react-router";
 
 const ErrorPage = () => {

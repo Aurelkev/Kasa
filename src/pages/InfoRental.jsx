@@ -42,7 +42,7 @@ function InfoRental() {
       <div className="apartment__description">
         <div className="apartment__description__details">
           <p className="apartment__description__title">
-            Test
+            <span>Description</span>
             <Chevron/>
           </p>
           <p className="apartment__description__content">
@@ -55,7 +55,7 @@ function InfoRental() {
         </div>
         <div className="apartment__description__details">
           <p className="apartment__description__title">
-            test 2
+            <span>Équipements</span>
             <Chevron/>
           </p>
           <p className="apartment__description__content">

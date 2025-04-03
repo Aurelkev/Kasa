@@ -2,8 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.scss'
 import { BrowserRouter, Routes, Route } from "react-router";
-import About from './components/About.jsx'
-import ErrorPage from './components/ErrorPage.jsx'
+import About from './pages/About.jsx'
+import ErrorPage from './pages/ErrorPage.jsx'
 import InfoRental from './pages/InfoRental.jsx';
 import Layout from './Layouts/Layout.jsx';
 import App from './App.jsx';

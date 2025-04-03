@@ -1,0 +1,25 @@
+@use '../sass/utils/variables.scss' as colors;
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color : colors.$primary-color;
+  & h2 {
+    font-size: 288px;
+    font-weight: 700;
+    margin: 0;
+  }
+  & p {
+    font-size: 36px;
+    font-weight: 500;
+    padding: 4rem 0;
+  }
+  & .home {
+    text-decoration: underline;
+    color: colors.$terciary-color;
+    font-size: 18px;
+    padding-bottom: 4rem;
+  }
+}

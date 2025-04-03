@@ -9,7 +9,6 @@ function RentalGrid() {
     <Rental/>
     <Rental/>
     
-
   </div>;
 }
 

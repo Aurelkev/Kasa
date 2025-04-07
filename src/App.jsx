@@ -5,7 +5,7 @@ import RentalGrid from "../src/components/RentalGrid";
 
 function App() {
   return <div>
-    <Banner/>
+    <Banner p="Chez vous, partout et ailleurs"/>
     <RentalGrid/>
   </div>
 }

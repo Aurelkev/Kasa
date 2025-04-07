@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./InfoRental.scss";
 import Star from "../components/Star.jsx";
 import Chevron from "../components/Chevron.jsx";
-
-
-
+import { useLocation } from "react-router";
+import BannerRental from "../components/BannerRental.jsx"
 
 function InfoRental() {
+  const location = useLocation();
+  const [actualRental, setActualRental] = useState({});
+  useEffect(fetchRentalInfo, []);
+
+  function fetchRentalInfo() {
+    fetch("database.json")
+      .then((res) => res.json())
+      .then((rentals) => {
+        const actualRental = rentals.find(rental => rental.id === location.state.id);
+        setActualRental(actualRental);
+      })
+      .catch(console.error);
+  }
+
   return (
     <div className="apartment">
-      <div>
-        <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg" alt="" />
-      </div>
+      <BannerRental imageUrl={actualRental.cover}/>
       <div className="apartment__page">
         <div className="apartment__page__title">
           <h1>Cozy loft on the Canal Saint-Martin</h1>
@@ -43,7 +54,7 @@ function InfoRental() {
         <div className="apartment__description__details">
           <p className="apartment__description__title">
             <span>Description</span>
-            <Chevron/>
+            <Chevron />
           </p>
           <p className="apartment__description__content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -56,7 +67,7 @@ function InfoRental() {
         <div className="apartment__description__details">
           <p className="apartment__description__title">
             <span>Équipements</span>
-            <Chevron/>
+            <Chevron />
           </p>
           <p className="apartment__description__content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada bibendum metus,

@@ -6,7 +6,7 @@ function ApartmentPage(props) {
 
   const actualRental = props.actualRental;
   const [firstName, lastName] = actualRental.host.name.split(" ");
-
+  console.log(actualRental.rating);
   return (
     <div className="apartment__page">
       <div className="apartment__page__title">
@@ -29,11 +29,7 @@ function ApartmentPage(props) {
           </div>
         </div>
         <div className="apartment__host__rate">
-          <Star />
-          <Star />
-          <Star />
-          <Star />
-          <Star />
+         <Star rating={actualRental.rating}/>
         </div>
       </div>
     </div>

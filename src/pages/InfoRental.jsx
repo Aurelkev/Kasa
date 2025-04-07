@@ -25,8 +25,8 @@ if (actualRental == null) return <div>loading</div>
       <BannerRental imageUrl={actualRental.cover}/>
       <ApartmentPage actualRental={actualRental} />
       <div className="apartment__description">
-        <ApartmentDetails/>
-        <ApartmentDetails/>
+        <ApartmentDetails title="Description" content={actualRental.description}/>
+        <ApartmentDetails title="Équipements" content={actualRental.equipments}/>
       </div>
     </div>
 

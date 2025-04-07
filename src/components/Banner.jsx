@@ -1,9 +1,9 @@
 import React from "react";
 import "./Banner.scss";
 
-function Banner({ p, backgroundImage }) {
+function Banner({p}) {
   const bannerBackground = {
-    backgroundImage: "url(${backgroundImage}"
+    backgroundImage: "url(./banner1.jpg)"
   };
   return (
   <div className="banner" style={bannerBackground}>

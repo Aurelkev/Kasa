@@ -1,4 +1,20 @@
+@use "../sass/utils/variables.scss" as colors;
+
+
 .star {
   height: 25px;
   width: 25px;
+}
+
+.red {
+  color: colors.$primary-color;
+}
+
+.gray {
+  color: colors.$star-color-primary;
+}
+
+.star-rating {
+  display: flex;
+  gap: 8px;
 }

@@ -19,7 +19,7 @@ function RentalGrid() {
   }
   return <div className="grid">
     {rentals.map((rental) => (
-      <Rental title={rental.title} imageUrl={rental.cover} id={rental.id} />
+      <Rental key={rental.id} title={rental.title} imageUrl={rental.cover} id={rental.id} />
     ))}
   </div>;
 

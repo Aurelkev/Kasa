@@ -6,7 +6,6 @@ function ApartmentPage(props) {
 
   const actualRental = props.actualRental;
   const [firstName, lastName] = actualRental.host.name.split(" ");
-  console.log(actualRental.rating);
   return (
     <div className="apartment__page">
       <div className="apartment__page__title">

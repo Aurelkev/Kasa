@@ -34,7 +34,7 @@
     &__tags {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      width: 40%;
+      width: 45%;
       gap: 1rem;
 
       span {
@@ -44,7 +44,7 @@
         color: colors.$secondary-color;
         border-radius: 10px;
         text-align: center;
-        padding: 3px 0;
+        padding: 5px 5px;
       }
     }
   }

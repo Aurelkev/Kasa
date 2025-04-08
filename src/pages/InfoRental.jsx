@@ -26,7 +26,7 @@ if (actualRental == null) return <div>loading</div>
       <ApartmentPage actualRental={actualRental} />
       <div className="apartment__description">
         <ApartmentDetails title="Description" content={actualRental.description}/>
-        <ApartmentDetails title="Équipements" content={actualRental.equipments}/>
+        <ApartmentDetails title="Équipements" content={actualRental.equipments.map(equipments => <li key={equipments}>{equipments}</li>)}/>
       </div>
     </div>
 

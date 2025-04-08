@@ -3,11 +3,19 @@
   flex-direction: column;
   align-items: center;
 
+
   .banner {
     width: 100%;
+    background-image: url('/banner2.jpg');
   }
 
   &__details {
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .apartment__description__details {
+    width: 75%;
   }
 }

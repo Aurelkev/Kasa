@@ -1,3 +1,13 @@
 .chevron {
   color: white;
+  transition: transform 0.3s ease;
+  &.left {
+    transform: rotate(90deg);
+  }
+  &.right {
+    transform: rotate(-90deg);
+  }
+  &.up {
+    transform: rotate(180deg);
+  }
 }

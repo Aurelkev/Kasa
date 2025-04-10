@@ -22,7 +22,7 @@ function InfoRental() {
 if (actualRental == null) return <div>loading</div>
   return (
     <div className="apartment">
-      <BannerRental imageUrl={actualRental.cover}/>
+      <BannerRental pictures={actualRental.pictures}/>
       <ApartmentPage actualRental={actualRental} />
       <div className="apartment__description">
         <ApartmentDetails title="Description" content={actualRental.description}/>

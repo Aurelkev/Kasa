@@ -20,7 +20,14 @@
       & svg {
         position: relative;
         top: 2px;
+       & :hover {
+        cursor: pointer;
+       }
       }
+    }
+    &__details {
+      overflow: hidden;
+      margin-bottom: 10px;
     }
 
     &__content {
@@ -33,6 +40,17 @@
       z-index: -1;
       top: -10px;
       list-style-type: none;
+      animation: slider 0.3s ease-in-out;
     }
+  }
+}
+
+@keyframes slider {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

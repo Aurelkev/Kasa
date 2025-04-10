@@ -4,12 +4,24 @@
   align-items: center;
   justify-content: center;
 
+  .carousel-image-container {
+    position: relative; 
+  }
+
   .carousel-image {
     width: 100%;
-    max-height: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
   }
+
+  .carousel-counter {
+    position: absolute;
+    bottom: 45px;
+    color: white;
+    font-size: 18px;
+  }
+  
 
   button {
     position: absolute;

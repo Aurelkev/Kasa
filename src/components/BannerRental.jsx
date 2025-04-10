@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./BannerRental.scss";
-import "./Carrousel.scss";
+import "./Carousel.scss";
 import Chevron from "../components/Chevron.jsx";
 
 function BannerRental({ pictures }) {
@@ -20,7 +20,7 @@ function BannerRental({ pictures }) {
   return (
     <div className="carousel">
       {pictures.length > 1 && (
-        <button className="prev" onClick={prevSlide}><Chevron className="left"/></button>
+        <button className="prev" onClick={prevSlide}><Chevron className="left" /></button>
       )}
 
       <img
@@ -30,8 +30,15 @@ function BannerRental({ pictures }) {
       />
 
       {pictures.length > 1 && (
-        <button className="next" onClick={nextSlide}><Chevron className="right"/></button>
+        <div className="carousel-counter">
+          {currentIndex + 1} / {pictures.length}
+        </div>
       )}
+
+      {pictures.length > 1 && (
+        <button className="next" onClick={nextSlide}><Chevron className="right" /></button>
+      )}
+
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.scss'
 import { BrowserRouter, Routes, Route } from "react-router";
 import About from './pages/About.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'

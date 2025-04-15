@@ -16,3 +16,11 @@
     width: 80%;
   }
 }
+
+@media (max-width: 780px) {
+  .about {
+    &__details {
+      width: 100%;
+    }
+  }
+}

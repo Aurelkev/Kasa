@@ -18,3 +18,11 @@
     height: auto;
   }
 }
+
+@media screen and (max-width: 780px) {
+  .footer {
+    &__text {
+      font-size: 12px;
+    }
+  }
+}

@@ -6,7 +6,7 @@
 
   .banner {
     width: 100%;
-    background-image: url('/banner2.jpg');
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3)), url('/banner2.jpg');
   }
 
   &__details {

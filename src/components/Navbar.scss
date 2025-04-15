@@ -28,6 +28,22 @@
     & img {
       height: 70px;
       width: 210px;
+
     }
+  }
+
+  @media screen and (max-width: 780px) {
+    &__logo {
+      & img {
+        width: 145px;
+        height: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  .navbar {
+    margin: 20px;
+    font-size: 12px;
   }
 }

@@ -1,32 +1,40 @@
 import React, { useEffect, useState } from "react";
 import "./InfoRental.scss";
-import { useLocation } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import BannerRental from "../components/BannerRental.jsx"
 import ApartmentPage from "../components/ApartmentPage.jsx";
 import ApartmentDetails from "../components/ApartmentDetails.jsx";
 
 function InfoRental() {
-  const location = useLocation();
-  const [actualRental, setActualRental] = useState(null);
-  useEffect(fetchRentalInfo, []);
+  const { id } = useParams();
+  const [actualRental, setActualRental] = useState(null);;
+  const navigate = useNavigate();
 
-  function fetchRentalInfo() {
-    fetch("database.json")
+  useEffect(() => {
+    fetch("/database.json")
       .then((res) => res.json())
       .then((rentals) => {
-        const actualRental = rentals.find((rental) => rental.id === location.state.id);
-        setActualRental(actualRental);
+        const foundRental = rentals.find((rental) => rental.id === id);
+        if (!foundRental) {
+          navigate("/404");
+        } else {
+          setActualRental(foundRental);
+        }
       })
       .catch(console.error);
+  }, [id, navigate]);
+
+  if (actualRental === null) {
+    return <div>Loading...</div>;
   }
-if (actualRental == null) return <div>loading</div>
+
   return (
     <div className="apartment">
-      <BannerRental pictures={actualRental.pictures}/>
+      <BannerRental pictures={actualRental.pictures} />
       <ApartmentPage actualRental={actualRental} />
       <div className="apartment__description">
-        <ApartmentDetails title="Description" content={actualRental.description}/>
-        <ApartmentDetails title="Équipements" content={actualRental.equipments.map(equipments => <li key={equipments}>{equipments}</li>)}/>
+        <ApartmentDetails title="Description" content={actualRental.description} />
+        <ApartmentDetails title="Équipements" content={actualRental.equipments.map(equipments => <li key={equipments}>{equipments}</li>)} />
       </div>
     </div>
 

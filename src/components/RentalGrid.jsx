@@ -17,9 +17,15 @@ function RentalGrid() {
       .then((res) => setRentals(res))
       .catch(console.error);
   }
+  
   return <div className="grid">
     {rentals.map((rental) => (
-      <Rental key={rental.id} title={rental.title} imageUrl={rental.cover} id={rental.id} />
+      <Rental
+        key={rental.id}
+        title={rental.title}
+        imageUrl={rental.cover}
+        id={rental.id}
+      />
     ))}
   </div>;
 

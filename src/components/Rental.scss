@@ -3,13 +3,23 @@
 .rental {
   display: grid;
   align-items: end;
-  min-height: 255px;
+  height: 100%;
+  width: 100%;
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+
+  .rental-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    display: block;
   }
 
   &__title {
@@ -17,7 +27,7 @@
     font-size: 18px;
     font-weight: 700;
     color: colors.$secondary-color;
-    width: 30%;
+    width: 35%;
     position: absolute;
     text-shadow: 
     1px 1px 0px black,  

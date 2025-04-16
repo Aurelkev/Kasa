@@ -4,7 +4,7 @@ import Banner from "../components/Banner";
 import ApartmentDetails from "../components/ApartmentDetails";
 import { aboutList } from '../aboutList'; 
 
-function About(props) {
+function About() {
   return (
     <div className="about">
       <Banner p=""/>

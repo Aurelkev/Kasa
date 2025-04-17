@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Main from "../components/Main";
-import Footer from "../components/Footer";
+import Navbar from "../components/Page/Navbar";
+import Main from "../components/Page/Main";
+import Footer from "../components/Page/Footer";
 import { Outlet } from "react-router";
 import "./Layout.scss";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../src/components/Banner";
+import Banner from "./components/Banners/Banner";
 import RentalGrid from "../src/components/RentalGrid";
 import "./App.scss";
 

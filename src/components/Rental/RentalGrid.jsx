@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./RentalGrid.scss"
-import Rental from "./Rental/Rental.jsx";
+import Rental from "../Rental/Rental.jsx";
 
 
 function RentalGrid() {

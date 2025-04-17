@@ -1,6 +1,6 @@
 import React from "react";
 import "./ApartmentDetails.scss";
-import Chevron from "../components/Chevron.jsx";
+import Chevron from "../FontAwesome/Chevron.jsx";
 import { useState } from "react";
 
 function ApartmentDetails(props) {

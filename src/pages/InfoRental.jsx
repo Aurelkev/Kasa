@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./InfoRental.scss";
 import { useNavigate, useParams } from "react-router";
-import BannerRental from "../components/BannerRental.jsx"
-import ApartmentPage from "../components/ApartmentPage.jsx";
-import ApartmentDetails from "../components/ApartmentDetails.jsx";
+import BannerRental from "../components/Banners/BannerRental.jsx"
+import ApartmentPage from "../components/Apartment/ApartmentPage.jsx";
+import ApartmentDetails from "../components/Apartment/ApartmentDetails.jsx";
 
 function InfoRental() {
   const { id } = useParams();

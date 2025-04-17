@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "./components/Banners/Banner";
-import RentalGrid from "../src/components/RentalGrid";
+import RentalGrid from "../src/components/Rental/RentalGrid";
 import "./App.scss";
 
 

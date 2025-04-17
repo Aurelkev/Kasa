@@ -1,6 +1,6 @@
 import React from "react";
 import "./ApartmentPage.scss";
-import Star from "../components/Star.jsx";
+import Star from "../FontAwesome/Star.jsx";
 
 function ApartmentPage(props) {
 

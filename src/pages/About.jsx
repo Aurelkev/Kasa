@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.scss";
 import Banner from "../components/Banners/Banner";
-import ApartmentDetails from "../components/ApartmentDetails";
+import ApartmentDetails from "../components/Apartment/ApartmentDetails";
 import { aboutList } from '../aboutList'; 
 
 function About() {

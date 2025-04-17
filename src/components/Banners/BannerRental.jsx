@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./BannerRental.scss";
-import "./Carousel.scss";
-import Chevron from "./FontAwesome/Chevron.jsx";
+import "../../components/Carousel.scss";
+import Chevron from "../FontAwesome/Chevron.jsx";
 
 function BannerRental({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);

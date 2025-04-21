@@ -20,6 +20,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    min-height: 255px;
   }
 
   &__title {
@@ -27,12 +28,19 @@
     font-size: 18px;
     font-weight: 700;
     color: colors.$secondary-color;
-    width: 35%;
+    width: 50%;
     position: absolute;
     text-shadow: 
     1px 1px 0px black,  
     -1px -1px 0px black,  
     1px -1px 0px black,  
     -1px 1px 0px black;
+  }
+  @media screen and (max-width: 780px) {
+    .rental {
+      &__title {
+        font-size: 12px;
+      }
+    }
   }
 }

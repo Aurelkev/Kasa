@@ -8,3 +8,15 @@ const Chevron = ({onClick, className = ""}) => {
 };
 
 export default Chevron;
+
+/* Sans FontAwesomeIcon */
+
+/* import React from "react";
+import "./Chevron.scss";
+
+const Chevron = ({ onClick, className = "" }) => {
+  return <i className={`fa-solid fa-chevron-down chevron ${className}`} onClick={onClick}></i>;
+};
+
+export default Chevron;
+ */

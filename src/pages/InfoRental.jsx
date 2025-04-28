@@ -3,7 +3,7 @@ import "./InfoRental.scss";
 import { useNavigate, useParams } from "react-router";
 import BannerRental from "../components/Banners/BannerRental.jsx"
 import ApartmentPage from "../components/Apartment/ApartmentPage.jsx";
-import ApartmentDetails from "../components/Apartment/ApartmentDetails.jsx";
+import Collapse from "../components/Collapse/Collapse.jsx";
 
 function InfoRental() {
   const { id } = useParams();
@@ -32,9 +32,9 @@ function InfoRental() {
     <div className="apartment">
       <BannerRental pictures={actualRental.pictures} />
       <ApartmentPage actualRental={actualRental} />
-      <div className="apartment__description">
-        <ApartmentDetails title="Description" content={actualRental.description} />
-        <ApartmentDetails title="Équipements" content={actualRental.equipments.map(equipments => <li key={equipments}>{equipments}</li>)} />
+      <div className="collapse__description">
+        <Collapse title="Description" content={actualRental.description} />
+        <Collapse title="Équipements" content={actualRental.equipments.map(equipments => <li key={equipments}>{equipments}</li>)} />
       </div>
     </div>
 

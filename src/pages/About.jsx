@@ -7,7 +7,7 @@ import { aboutList } from "../aboutList";
 function About() {
   return (
     <div className="about">
-      <Banner p="" />
+      <Banner />
       <div className="about__details">
         {aboutList.map((details) => (
           <Collapse

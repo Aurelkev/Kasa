@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <div className="banner-main">
-        <Banner p="Chez vous, partout et ailleurs" />
+        <Banner title="Chez vous, partout et ailleurs" />
       </div>
       <RentalGrid />
     </div>

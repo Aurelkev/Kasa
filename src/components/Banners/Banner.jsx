@@ -1,10 +1,10 @@
 import React from "react";
 import "./Banner.scss";
 
-function Banner({ p }) {
+function Banner({ title }) {
   return (
     <div className="banner">
-      <h1>{p}</h1>
+      <h1>{title}</h1>
     </div>
   );
 }

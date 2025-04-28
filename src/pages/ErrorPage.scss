@@ -1,11 +1,11 @@
-@use '../sass/variables.scss' as colors;
+@use "../sass/variables.scss" as colors;
 
 .error {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color : colors.$primary-color;
+  color: colors.$primary-color;
   & h2 {
     font-size: 288px;
     font-weight: 700;
@@ -23,16 +23,16 @@
     padding-bottom: 4rem;
   }
 }
-@media (max-width: 780px) { 
+@media (max-width: 780px) {
   .error {
-    & h2{
+    & h2 {
       font-size: 96px;
       margin-top: 50px;
     }
 
     & p {
       font-size: 18px;
-      text-align:center;
+      text-align: center;
     }
 
     & .home {

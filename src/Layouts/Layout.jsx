@@ -6,13 +6,15 @@ import { Outlet } from "react-router";
 import "./Layout.scss";
 
 function Layout() {
-  return <div>
-    <Navbar />
-    <Main>
-      <Outlet/>
-    </Main>
-    <Footer/>
-  </div>
+  return (
+    <div>
+      <Navbar />
+      <Main>
+        <Outlet />
+      </Main>
+      <Footer />
+    </div>
+  );
 }
 
 export default Layout;

@@ -6,21 +6,19 @@ import Chevron from "../FontAwesome/Chevron.jsx";
 function BannerRental({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const prevSlide = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? pictures.length - 1 : prev - 1
-    );
+    setCurrentIndex((prev) => (prev === 0 ? pictures.length - 1 : prev - 1));
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prev) =>
-      prev === pictures.length - 1 ? 0 : prev + 1
-    );
+    setCurrentIndex((prev) => (prev === pictures.length - 1 ? 0 : prev + 1));
   };
 
   return (
     <div className="carousel">
       {pictures.length > 1 && (
-        <button className="prev" onClick={prevSlide}><Chevron className="left" /></button>
+        <button className="prev" onClick={prevSlide}>
+          <Chevron className="left" />
+        </button>
       )}
 
       <img
@@ -36,9 +34,10 @@ function BannerRental({ pictures }) {
       )}
 
       {pictures.length > 1 && (
-        <button className="next" onClick={nextSlide}><Chevron className="right" /></button>
+        <button className="next" onClick={nextSlide}>
+          <Chevron className="right" />
+        </button>
       )}
-
     </div>
   );
 }

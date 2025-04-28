@@ -3,7 +3,6 @@ import "./ApartmentPage.scss";
 import Star from "../FontAwesome/Star.jsx";
 
 function ApartmentPage(props) {
-
   const actualRental = props.actualRental;
   const [firstName, lastName] = actualRental.host.name.split(" ");
   return (
@@ -28,11 +27,11 @@ function ApartmentPage(props) {
           </div>
         </div>
         <div className="apartment__host__rate">
-         <Star rating={actualRental.rating}/>
+          <Star rating={actualRental.rating} />
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default ApartmentPage;
